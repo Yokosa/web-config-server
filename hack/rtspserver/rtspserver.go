@@ -4,10 +4,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/telmomarques/x360h1080p-web-config-server/network"
+	"github.com/Yokosa/web-config-server/network"
 
-	"github.com/telmomarques/x360h1080p-web-config-server/config"
-	"github.com/telmomarques/x360h1080p-web-config-server/service"
+	"github.com/Yokosa/web-config-server/config"
+	"github.com/Yokosa/web-config-server/service"
 )
 
 type RTSPServerConfig struct {
@@ -93,7 +93,7 @@ func Info() string {
 	ip := network.GetIP()
 
 	return `
-		<p>Mainstream (1920x1088): <a href='rtsp://` + ip + `:8554/mainstream'>rtsp://` + ip + `:8554/mainstream</a></p>
-		<p>Substream (640x360): <a href='rtsp://` + ip + `:8554/substream'>rtsp://` + ip + `:8554/substream</a></p>
+		<p>Mainstream (1920x1088): <a href='rtsp://` + ip + `:554/main'>rtsp://` + ip + `:554/main</a></p>
+		<p>Substream (640x360): <a href='rtsp://` + ip + `:554/sub'>rtsp://` + ip + `:554/sub</a></p>
 	`
 }

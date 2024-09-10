@@ -7,11 +7,11 @@ import (
 
 	"github.com/gin-contrib/static"
 	"github.com/gin-gonic/gin"
-	"github.com/telmomarques/x360h1080p-web-config-server/config"
-	"github.com/telmomarques/x360h1080p-web-config-server/customerror"
-	"github.com/telmomarques/x360h1080p-web-config-server/hack/rtspserver"
-	"github.com/telmomarques/x360h1080p-web-config-server/hack/sshserver"
-	"github.com/telmomarques/x360h1080p-web-config-server/hack/websocketstreamserver"
+	"github.com/Yokosa/web-config-server/config"
+	"github.com/Yokosa/web-config-server/customerror"
+	"github.com/Yokosa/web-config-server/hack/rtspserver"
+	"github.com/Yokosa/web-config-server/hack/sshserver"
+	"github.com/Yokosa/web-config-server/hack/websocketstreamserver"
 )
 
 var wwwPath = "/mnt/sdcard/hacks/web-config/www"
